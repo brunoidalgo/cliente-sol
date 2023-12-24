@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="light">
+<html lang="pt-br">
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,46 +14,50 @@
     <!-- ViewPort = Definindo a parte visivel de acordo com o dispositivo do usuário width=device-width -->
     <!-- initial-scale=1.0 = Defini o zoom da página que nesse caso inicia zerado, mas pode ser alterado pelo usuário -->
     
-    <title>Empke Ads</title>
+    <title>Guia Sol</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="container">
-      <div id="profile">
-        <img
-          src="./assets/avatar.png"
-          alt="Foto de Bruno sorrindo com fundo branco"
-        />
-        <p>@empke.ads</p>
-      </div>
-      <div id="switch" onclick="toggleMode()">
-        <button></button>
-        <span></span>
-      </div>
-
-      <ul>
-        <li><a href="#" target="_blank">Agendar reunião</a></li>
+    <div class="video-container">
+      <video autoplay muted loop>
+        <source src="./assets/video.webm" type="video/webm">
+        Seu navegador não suporta a tag de vídeo.
+      </video>
+    </div>
+    <div id="content-container">
+      <div id="container">
+        <!-- Seu conteúdo aqui -->
+        <div id="profile">
+          <img src="./assets/avatar.png" alt="Perfil">
+          <p>@guiasolmcz</p>
+        </div>
+        <ul>
+          <li><a href="#" target="_blank">Agendar reunião</a></li>
         <li><a href="#" target="_blank">Fale Conosco</a></li>
         <li><a href="https://www.instagram.com/empke.ads/" target="_blank">Instagram</a></li>
         <li><a href="#" target="_blank">Nosso Site</a></li>
-      </ul>
-      <div id="social-links">
-        <a href="">
-          <ion-icon name="logo-whatsapp" target="_blank"></ion-icon>
-        </a>
-        <a href="https://www.instagram.com/empke.ads/">
-          <ion-icon name="logo-instagram" target="_blank"></ion-icon>
-        </a>
-        <a href="https://www.linkedin.com/in/bruno-empke-8a73121b3/">
-          <ion-icon name="logo-linkedin" target="_blank"></ion-icon>
-        </a>
-        <a href="">
-          <ion-icon name="logo-facebook" target="_blank"></ion-icon>
-        </a>
+        <li><a href="#" target="_blank">Personalizado</a></li>
+        <li><a href="#" target="_blank">Personalizado</a></li>
+        </ul>
+        <div id="social-links">
+          <a href="">
+            <ion-icon name="logo-whatsapp" target="_blank"></ion-icon>
+          </a>
+          <a href="https://www.instagram.com/empke.ads/">
+            <ion-icon name="logo-instagram" target="_blank"></ion-icon>
+          </a>
+          <a href="https://www.linkedin.com/in/bruno-empke-8a73121b3/">
+            <ion-icon name="logo-linkedin" target="_blank"></ion-icon>
+          </a>
+          <a href="">
+            <ion-icon name="logo-facebook" target="_blank"></ion-icon>
+          </a>
+        </div>
+        <footer>
+          Desenvolvido por <b>@empke.ads</b>
+        </footer>
       </div>
-      <footer>Desenvolvido por Empke Ads</footer>
     </div>
-
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -64,4 +68,5 @@
     ></script>
     <script src="./script.js"></script>
   </body>
+  
 </html>
